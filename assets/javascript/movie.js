@@ -24,7 +24,7 @@ $(document).ready(function () {
         console.log(data.Actors);
         console.log(data.Awards);
         console.log(data.BoxOffice);
-        console.log(data.MetaScore);
+        console.log(data.Metascore);
         console.log(data.Plot);
         console.log(data.Rated);
         console.log(data.Released);
