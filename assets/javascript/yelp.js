@@ -26,15 +26,18 @@ $(document).ready(function () {
                 var rating = $("<p></p>");
                 var address = $("<p></p>");
                 var businessImg = $("<img class='center-block'>");
-                rating.text(results[i].rating);
+                var phone = $("<p></p>");
+                rating.text(`${results[i].rating}/5`);
                 name.text(results[i].name);
+                phone.text(results[i].display_phone);
                 address.text(results[i].location.address1 + " " + results[i].location.city + " " + results[i].location.zip_code)
                 businessImg.attr("style", "width: 200px; height: 200px; margin: auto;")
                 businessImg.attr("src", results[i].image_url);
                 businessDiv.append(name);
                 businessDiv.append(address)
+                businessDiv.append(phone);
+                businessDiv.append("Rating: " , rating);
                 businessDiv.append(businessImg);
-                businessDiv.append("Rating: ", rating);
                 wrapperDiv.append(businessDiv)
                 $("#businesses-go-here").append(wrapperDiv);
             }
