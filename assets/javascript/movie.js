@@ -1,5 +1,5 @@
 
-
+// basic API call:
 // var queryURL = "https://www.omdbapi.com/?t=beauty+and+the+beast&plot=short&apikey=de45c0f0";
 // $.ajax({
 //   url: queryURL,
@@ -19,6 +19,7 @@ $(document).ready(function () {
       url: queryURL,
       method: "GET"
     }).then(function(data) {
+      
       // console.log(data);
       // console.log("Title: "+data.Title);
       // console.log("Rated: "+data.Rated);
