@@ -34,7 +34,7 @@ $(document).ready(function () {
                 businessDiv.append(name);
                 businessDiv.append(address)
                 businessDiv.append(businessImg);
-                businessDiv.append(rating);
+                businessDiv.append("Rating: ", rating);
                 wrapperDiv.append(businessDiv)
                 $("#businesses-go-here").append(wrapperDiv);
             }
