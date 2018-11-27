@@ -1,5 +1,5 @@
 
-
+// basic API call:
 // var queryURL = "https://www.omdbapi.com/?t=beauty+and+the+beast&plot=short&apikey=de45c0f0";
 // $.ajax({
 //   url: queryURL,
@@ -9,30 +9,21 @@
 // });
 
 $(document).ready(function () {
-
    
   $("#submitMovie").on("click", function () {
-    $("#movies-here").empty();
+    event.preventDefault();
     var movie = $("#movie").val().trim();
     var queryURL = "https://www.omdbapi.com/?t=" + movie + "&plot=short&apikey=de45c0f0";
     $.ajax({
       url: queryURL,
       method: "GET"
     }).then(function(data) {
-      // console.log(data);
-      // console.log("Title: "+data.Title);
-      // console.log("Rated: "+data.Rated);
-      // console.log("Release date: "+data.Released);
-      // console.log("Plot: "+data.Plot);
-      // console.log("Actors: "+data.Actors);
-      // console.log("Awards: "+data.Awards);
-      // console.log("Metascore: "+data.Metascore);
-      // console.log("IMDB Rating: "+data.imdbRating)
-      // console.log("Runtime: "+data.Runtime);
-      // console.log("Writer: "+data.Writer);
-      // console.log("Poster URL: "+data.Poster);
 
-      var movieDiv = $("<div class='movie'>");
+      var movieDiv = $("<div class='card col-lg-4'>");
+
+      var title = $("<h1 class='title'>").text(data.Title);
+      movieDiv.append(title)
+
       var pOne = $("<p>").text("Rating: " + data.Rated);
       movieDiv.append(pOne);
 
@@ -65,9 +56,6 @@ $(document).ready(function () {
 
       $("#movies-here").prepend(movieDiv);
 
-      var title = data.Title
-      $("#movies-title").text(title);
-
     });
-  })
+  });
 });
