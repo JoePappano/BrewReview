@@ -1,0 +1,27 @@
+/*styling for navbar-brand or title*/
+.h1 {
+    padding: 20px;
+    margin-bottom: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+}
+/*syling for navbar links*/ 
+.nav-link {
+    color: white;
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; 
+}
+/*styling for background image*/
+body {
+    background-image:url(../images/blu_stripes.png);
+}
+
+/*Home Page styling*/
+/*styling for bold text within jumbotron*/
+.movie-text {
+    color: #343a40;
+}
+/*styling for border around the jumbotron*/
+.border {
+    border-style: thick;
+    border-width: 10px !important;
+}
