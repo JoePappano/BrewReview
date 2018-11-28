@@ -22,6 +22,9 @@ $(document).ready(function () {
             for(i = 0; i < results.length; i++) {
                 var wrapperDiv = $("<div class='text-center'></div>")
                 var businessDiv = $("<div class='card'></div>");
+                var bizRow = $("<div class='row'></div>")
+                var imgDiv = $("<div class='col-lg-6'></div>");
+                var infoDiv = $("<div class='col-lg-6'></div>");
                 var name = $("<p></p>");
                 var rating = $("<p></p>");
                 var address = $("<p></p>");
@@ -31,13 +34,16 @@ $(document).ready(function () {
                 name.text(results[i].name);
                 phone.text(results[i].display_phone);
                 address.text(results[i].location.address1 + " " + results[i].location.city + " " + results[i].location.zip_code)
-                businessImg.attr("style", "width: 200px; height: 200px; margin: auto;")
+                businessImg.attr("style", "width: 250px; height: 250px; margin: auto;")
                 businessImg.attr("src", results[i].image_url);
-                businessDiv.append(name);
-                businessDiv.append(address)
-                businessDiv.append(phone);
-                businessDiv.append("Rating: " , rating);
-                businessDiv.append(businessImg);
+                infoDiv.append(name);
+                infoDiv.append(address)
+                infoDiv.append(phone);
+                infoDiv.append("Rating: " , rating);
+                imgDiv.append(businessImg);
+                bizRow.append(imgDiv);
+                bizRow.append(infoDiv);
+                businessDiv.append(bizRow);
                 wrapperDiv.append(businessDiv)
                 $("#businesses-go-here").append(wrapperDiv);
             }
