@@ -15,17 +15,6 @@ body {
     background-image:url(../images/blu_stripes.png);
 }
 
-/*Home Page styling*/
-/*styling for bold text within jumbotron*/
-.movie-text {
-    color: #343a40;
-}
-/*styling for border around the jumbotron*/
-.border {
-    border-style: thick;
-    border-width: 10px !important;
-}
-
 /*styling for the footer*/
 .footer {
     width:100%;
@@ -73,7 +62,3 @@ body {
     background: #17a2b8;
     color: black;
 }
-
-
-
-
