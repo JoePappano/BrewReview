@@ -1,8 +1,16 @@
 var APIKey = "xzFW3uxT8Ov3zT9KNUNB1AEsl_64lTRsZ5upCl7wC5xnrZnHLFXt7tcohbD2vrGLXVVKmPP3woDyirasc6xktoFaDCcUxapP_65iAYmRF_INGxGdektwyptPsjTqW3Yx";
 var clientID = "fAKzSCpALYlLdNzRhtVG8g";
 
+$("#businesses-go-here.card-body").on("click",".text-center",function(){
+    // console.log(typeof this.children[0].children[1])
+    console.log(typeof this.children[0])
+    var config
+    
+
+})
 
 $(document).ready(function () {
+
 
    
     $("#submit").on("click", function () {
