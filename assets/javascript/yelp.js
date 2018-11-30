@@ -61,5 +61,8 @@ $(document).ready(function () {
            //     console.log(reviewDiv)
            // }
        });
+       // Clear the text boxes after a search.
+       $("#brewery").val("");
+       $("#location").val("");
    })
 })
