@@ -56,8 +56,7 @@ $(document).ready(function () {
       movieDiv.append(image);
 
       $("#movies-here").prepend(movieDiv);
-
-      
+      $("#movie").val("");
     });
   });
 });
