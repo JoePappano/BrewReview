@@ -12,16 +12,15 @@
     crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/movie.css">
 
 </head>
 
 <body>
-
     <header class="header navbar-dark bg-dark">
         <div class="container navbar-dark">
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <span class="navbar-brand text-black mb-1 h1">Movie Date Night!</span>
+                <a class="navbar-brand text-info mb-1 h1" href="home-page.html">Movie Date Night!</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -35,32 +34,38 @@
                             <a class="nav-link" href="movieIndex.html">Movie Review</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link b" href="yelp.html">Yelp Review</a>
+                            <a class="nav-link b" href="yelp.html">Dinner Planning</a>
                         </li>
                     </ul>
                 </div>
             </nav>
         </div>
     </header>
+    <br>
+    <br>
 <div class="container">
     <div class="row">
         <form class="col-lg-4">
             <div class="form-group">
-                <input id="movie" type="text" class="form-control" placeholder="Search Movies">
-            
-            <button id="submitMovie" type="submit" class="btn btn-primary">Submit</button>
-        </div>
+                <input id="movie" type="text" class="form-control" placeholder="Search Movie Titles">
+                <button id="submitMovie" type="submit" class="btn btn-primary">Submit</button>
+            </div>
         </form>
     </div>
 </div>
 
 <div class="container">
     <div id="movies-here" class="row">
-
     </div>
 </div>
 
-
+<footer class="footer navbar-dark bg-dark">
+    <a href="https://www.facebook.com/" class="fa fa-facebook mt-2"></a>
+    <a href="https://twitter.com/?lang=en" class="fa fa-twitter mt-2"></a>
+    <a href="https://www.instagram.com/?hl=en" class="fa fa-instagram mt-2"></a>
+    <a href="https://www.pinterest.com/" class="fa fa-pinterest mt-2"></a>
+<p class="copyright col-md-12">Copyright &copy;<span></span></p>
+</footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
