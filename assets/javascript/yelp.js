@@ -4,7 +4,7 @@ var clientID = "fAKzSCpALYlLdNzRhtVG8g";
 $("#businesses-go-here.card-body").on("click",".text-center",function(){
     // console.log(typeof this.children[0].children[1])
     console.log(typeof this.children[0])
-    var config
+    
 })
 
 $(document).ready(function () {
