@@ -26,6 +26,11 @@ body {
   border-width: 10px !important;
 }
 
+.card-title {
+  background-color: #17a2b8;
+  color: white;
+}
+
 /*styling for the footer*/
 .footer {
   width:100%;
