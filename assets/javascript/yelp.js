@@ -25,7 +25,7 @@ $(document).ready(function () {
            results = response.businesses;
            console.log(results)
            for(i = 0; i < results.length; i++) {
-               var wrapperDiv = $("<div class='text-center'></div>")
+               var wrapperDiv = $("<div class='text-center border border-dark mt-3 mb-3'></div>")
                var businessDiv = $("<div class='card'></div>");
                var bizRow = $("<div class='row'></div>")
                var imgDiv = $("<div class='col-lg-6'></div>");
