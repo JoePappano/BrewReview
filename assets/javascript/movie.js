@@ -20,7 +20,7 @@ $(document).ready(function () {
       method: "GET"
     }).then(function(data) {
 
-      var movieDiv = $("<div class='card col-lg-4'>");
+      var movieDiv = $("<div class='card col-lg-4 border border-dark'>");
 
       var title = $("<a href='https://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords="+data.Title+"' class='title'>").text(data.Title);
       movieDiv.append(title)
