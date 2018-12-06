@@ -26,6 +26,20 @@ body {
     border-width: 10px !important;
 }
 
+/*Card styling for dynamically created elements on the yelp.js*/
+.card-content {
+    text-align: center;
+}
+.card-title {
+    text-align: center;
+}
+.card-img-top {
+    height: 260px;
+}
+.dinnerCard {
+    height: 550px;
+}
+
 /*styling for the footer*/
 .footer {
     width:100%;

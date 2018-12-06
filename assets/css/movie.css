@@ -25,10 +25,19 @@ body {
   border-style: thick;
   border-width: 10px !important;
 }
-
-.card-title {
-  background-color: #17a2b8;
-  color: white;
+/*card styling*/
+.headText {
+  text-align: center;
+}
+.movieCard .card-body{
+  height: 300px;
+  overflow: auto;
+}
+.card-img-bottom {
+  height: 400px;
+}
+.movieCard {
+  margin-bottom: 10px;
 }
 
 /*styling for the footer*/
