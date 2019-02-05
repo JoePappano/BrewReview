@@ -1,6 +1,5 @@
 # BrewReview
 https://joepappano.github.io/BrewReview/
-This is our app BrewReview which organizes breweries and yelp reviews.
 
 1. What is your project?
 Movie Date Nite
